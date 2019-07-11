@@ -15,6 +15,8 @@
 		744AEA496A331E3F6C5F85228EC941A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8EFF4330B641317AF349ABE1D711F445 /* Pods-SPMenuKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AE5D137038A9211ECC75AF1936F5A /* Pods-SPMenuKit_Tests-dummy.m */; };
 		A3C87130DA8EF6C53AEADBFAB7A6ED73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DAE425CB22D7037100BFA372 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DAE425CA22D7037100BFA372 /* .gitkeep */; };
+		DAE425CD22D703DF00BFA372 /* SPMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE425CC22D703DF00BFA372 /* SPMenuItem.swift */; };
 		FCEBE0D9339133DBE94245BD9C738A21 /* Pods-SPMenuKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CCFF80C7D2306F743ED48DB0733ED34 /* Pods-SPMenuKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		C974C99AAB7F757C2F27170C6612FD1A /* SPMenuKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SPMenuKit.xcconfig; sourceTree = "<group>"; };
 		D17310413A06038324D5C2162A9533A9 /* Pods-SPMenuKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SPMenuKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D9A18BB973B7C239F5E2834AE574F90E /* Pods-SPMenuKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPMenuKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DAE425CA22D7037100BFA372 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DAE425CC22D703DF00BFA372 /* SPMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		7B976EBE539A4749EF86168E5D545F02 /* SPMenuKit */ = {
 			isa = PBXGroup;
 			children = (
+				DAE425C922D7037100BFA372 /* Classes */,
 				9F0D6B004816891D6937FBA1E89A7FD5 /* Pod */,
 				4C539F9E3059714FA098C75ADF191874 /* Support Files */,
 			);
@@ -199,6 +204,16 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE425C922D7037100BFA372 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DAE425CA22D7037100BFA372 /* .gitkeep */,
+				DAE425CC22D703DF00BFA372 /* SPMenuItem.swift */,
+			);
+			name = Classes;
+			path = SPMenuKit/Classes;
 			sourceTree = "<group>";
 		};
 		FB15BDDF764EF0EBEE4E5D466938E409 /* Pods-SPMenuKit_Example */ = {
@@ -312,6 +327,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					34CFBB05736AA1531D4C306B3EFF7754 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -344,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE425CB22D7037100BFA372 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE425CD22D703DF00BFA372 /* SPMenuItem.swift in Sources */,
 				1327659C911817352AB31262662671DF /* SPMenuKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C974C99AAB7F757C2F27170C6612FD1A /* SPMenuKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -692,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C974C99AAB7F757C2F27170C6612FD1A /* SPMenuKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -712,6 +736,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
