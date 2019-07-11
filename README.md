@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/SPMenuKit.svg?style=flat)](https://cocoapods.org/pods/SPMenuKit)
 [![Platform](https://img.shields.io/cocoapods/p/SPMenuKit.svg?style=flat)](https://cocoapods.org/pods/SPMenuKit)
 
+## Summary
+
+`SPMenuKit` supports to present images for `UIMenuController`. The main class `SPMenuItem` inherits from `UIMenuItem`.
+
+![Screenshot](Screenshot.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
@@ -20,9 +24,15 @@ it, simply add the following line to your Podfile:
 pod 'SPMenuKit'
 ```
 
+## Usage
+
+1. Import: `import SPMenuKit`
+2. Install: `SPMenuItem.install()`
+3. Init menu item: `let _ = SPMenuItem(title: "Title", image: UIImage(named: "image")!, action: #selector(onMenuItemTapped))`
+
 ## Author
 
-shiqp, qish@microsoft.com
+shiqp, qingpu.shi@gmail.com
 
 ## License
 
