@@ -1,0 +1,16 @@
+PODS:
+  - SPMenuKit (0.1.0)
+
+DEPENDENCIES:
+  - SPMenuKit (from `../`)
+
+EXTERNAL SOURCES:
+  SPMenuKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SPMenuKit: 36fdfb3569d2412915cf94dd40ec0f33d8ea9da9
+
+PODFILE CHECKSUM: 33827510cd4f4932028b440f0c8009f0c2feb312
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module Pods_SPMenuKit_Example {
+  umbrella header "Pods-SPMenuKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
