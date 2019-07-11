@@ -13,17 +13,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let _ = SPMenuItem(imageName: "image", action: #selector(onMenuItemTapped))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override var canBecomeFirstResponder: Bool {
+        return true
     }
 
     @objc func onMenuItemTapped() {
 
     }
 
+    @IBAction func showMenu(_ sender: UIButton) {
+        let menuItem = SPMenuItem(imageName: "Item", action: #selector(onMenuItemTapped))
+        UIMenuController.shared.menuItems = [menuItem]
+        UIMenuController.shared.setTargetRect(sender.frame, in: self.view)
+        UIMenuController.shared.setMenuVisible(true, animated: true)
+    }
 }
 
