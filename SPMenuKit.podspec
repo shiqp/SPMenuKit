@@ -22,13 +22,14 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/shiqp/SPMenuKit'
-  s.screenshots      = 'https://github.com/shiqp/SPMenuKit/blob/master/ScreenShot.png'
+  # s.screenshots      = 'https://github.com/shiqp/SPMenuKit/blob/master/ScreenShot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shiqp' => 'qingpu.shi@gmail.com' }
   s.source           = { :git => 'https://github.com/shiqp/SPMenuKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'SPMenuKit/Classes/**/*.{swift,h,m}'
   
