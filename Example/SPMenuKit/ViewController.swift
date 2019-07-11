@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        SPMenuItem.install()
     }
 
     override var canBecomeFirstResponder: Bool {
@@ -24,8 +25,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMenu(_ sender: UIButton) {
-        let menuItem = SPMenuItem(imageName: "Item", action: #selector(onMenuItemTapped))
-        UIMenuController.shared.menuItems = [menuItem]
+        let noteItem = SPMenuItem(title: "Note", image: UIImage(named: "note")!, action: #selector(onMenuItemTapped))
+        let copyItem = SPMenuItem(title: "Copy", action: #selector(onMenuItemTapped))
+
+        UIMenuController.shared.menuItems = [noteItem, copyItem]
         UIMenuController.shared.setTargetRect(sender.frame, in: self.view)
         UIMenuController.shared.setMenuVisible(true, animated: true)
     }

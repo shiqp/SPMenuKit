@@ -17,6 +17,7 @@
 		A3C87130DA8EF6C53AEADBFAB7A6ED73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DAE425CB22D7037100BFA372 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DAE425CA22D7037100BFA372 /* .gitkeep */; };
 		DAE425CD22D703DF00BFA372 /* SPMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE425CC22D703DF00BFA372 /* SPMenuItem.swift */; };
+		DAE425D122D7124A00BFA372 /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE425D022D7124A00BFA372 /* UIKit+Extension.swift */; };
 		FCEBE0D9339133DBE94245BD9C738A21 /* Pods-SPMenuKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CCFF80C7D2306F743ED48DB0733ED34 /* Pods-SPMenuKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		D9A18BB973B7C239F5E2834AE574F90E /* Pods-SPMenuKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPMenuKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DAE425CA22D7037100BFA372 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		DAE425CC22D703DF00BFA372 /* SPMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMenuItem.swift; sourceTree = "<group>"; };
+		DAE425D022D7124A00BFA372 /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			children = (
 				DAE425CA22D7037100BFA372 /* .gitkeep */,
 				DAE425CC22D703DF00BFA372 /* SPMenuItem.swift */,
+				DAE425D022D7124A00BFA372 /* UIKit+Extension.swift */,
 			);
 			name = Classes;
 			path = SPMenuKit/Classes;
@@ -382,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE425D122D7124A00BFA372 /* UIKit+Extension.swift in Sources */,
 				DAE425CD22D703DF00BFA372 /* SPMenuItem.swift in Sources */,
 				1327659C911817352AB31262662671DF /* SPMenuKit-dummy.m in Sources */,
 			);
