@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SPMenuKit_Example' do
+  pod 'SPMenuKit', :path => '../'
+
+  target 'SPMenuKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
