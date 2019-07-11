@@ -9,7 +9,7 @@
 
 `SPMenuKit` supports to present images for `UIMenuController`. The main class `SPMenuItem` inherits from `UIMenuItem`.
 
-![Screenshot](Screenshot.png)
+![ScreenShot](ScreenShot.png)
 
 ## Example
 
