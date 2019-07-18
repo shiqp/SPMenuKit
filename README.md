@@ -22,9 +22,20 @@ pod 'SPMenuKit'
 
 ## Usage
 
-1. Import: `import SPMenuKit`
-2. Install: `SPMenuItem.install()`
-3. Init menu item: `let _ = SPMenuItem(title: "Title", image: UIImage(named: "image")!, action: #selector(onMenuItemTapped))`
+1. Import:
+```swift
+import SPMenuKit
+```
+
+2. Install: 
+```swift
+SPMenuItem.install()
+```
+
+3. Init menu item:
+```swift
+let _ = SPMenuItem(title: "Title", image: UIImage(named: "image")!, action: #selector(onMenuItemTapped))
+```
 
 ## Author
 
